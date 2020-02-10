@@ -1,5 +1,5 @@
 # trafficbot
-Diabolic Traffic Bothttps://jasaseo.be/diabolic-traffic-bot-cracked-nulled/The Most Powerful Traffic Bot Boost your Views, Stats, Impressions, Votes, Likes, ...Boost your stats!
+Diabolic Traffic Bot. The Most Powerful Traffic Bot Boost your Views, Stats, Impressions, Votes, Likes, ...Boost your stats!
 
 You're dreaming about an infinite flood of visitors from all around the world? You want to increase your views with one single click? Then Diabolic Traffic Bot from Diabolic Labs is the software you need!
 
