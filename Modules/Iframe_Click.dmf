@@ -1,0 +1,21 @@
+[INFO]
+Description="Visit URL and click a random link"
+Var_A_Tab="URL List"
+Var_B_Tab="Iframe Source"
+Var_C_Tab="Referer (Optional)"
+Var_C_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+[/INFO]
+
+
+$url=get_random_line("$var_a")
+
+$referer=get_random_line("$var_c")
+referer("$referer")
+
+$iframe=get_random_line("$var_b")
+navigate("$url")
+
+//You can change all the sleep values
+sleep({3|6|9|12})
+iframe("src","$iframe")
+random_click()

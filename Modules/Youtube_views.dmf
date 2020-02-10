@@ -1,0 +1,27 @@
+[INFO]
+Description="(Beta)Youtube Views"
+Var_A_Tab="Instructions"
+Var_A_Text="1.Set the minimum time to run the modules to at least 240 seconds\r\n2.Use only Anonymous and Elite Proxies\r\n3.Uncheck the country China\r\n4.Use only https proxies\r\n\r\nThis Module is still in beta and this settings might not be the best"
+Var_B_Tab="Youtube URLs"
+Var_C_Tab="Random URLs"
+Var_C_Text="blogspot.com\r\ngoogle.com\r\nw3schools\r\nwww.weather.com\r\nlifehacker.com\r\nxe.com"
+Var_D_Tab="Referer"
+Var_D_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+[/INFO]
+
+
+$url=get_random_line("$var_b")
+
+$referer=get_random_line("$var_d")
+referer("$referer")
+
+$rnd_url=get_random_line("$var_c")
+navigate("$rnd_url")
+
+$rnd_url=get_random_line("$var_c")
+navigate("$rnd_url")
+
+$rnd_url=get_random_line("$var_c")
+navigate("$rnd_url")
+
+navigate("$url")

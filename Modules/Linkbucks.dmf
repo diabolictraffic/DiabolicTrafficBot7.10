@@ -1,0 +1,17 @@
+[INFO]
+Description="Click Next in Linkbucks URL"
+Var_A_Tab="Linkbucks URL List"
+Var_B_Tab="Referer"
+Var_B_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com\r\nhttp://reddit.com"
+[/INFO]
+
+
+$url=get_random_line("$var_a")
+
+$referer=get_random_line("$var_b")
+referer("$referer")
+
+navigate("$url")
+Sleep("{5|6|7|8|9}")
+
+a("id","skiplink","click")

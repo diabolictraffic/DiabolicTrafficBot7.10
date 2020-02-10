@@ -1,0 +1,22 @@
+[INFO]
+Description="Search and click the video link"
+Var_A_Tab="Search Terms"
+Var_B_Tab="Video Titles"
+[/INFO]
+
+
+navigate("http://youtube.com")
+
+//You can change all the sleep values
+sleep(3)
+
+$search_term=get_random_line("$var_a")
+
+input("id","masthead-search-term","value","$search_term")
+sleep(2)
+button("id","search-btn","click")
+sleep(12)
+foreach("$video_title","$var_b")
+a("title","$video_title","click")
+next
+

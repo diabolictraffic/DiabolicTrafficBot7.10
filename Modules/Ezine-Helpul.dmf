@@ -1,0 +1,20 @@
+[INFO]
+Description="Visit Article and click helpful.Set Min. Time>90"
+Var_A_Tab="Ezine URL List"
+Var_B_Tab="Referer (Optional)"
+Var_B_Text="http://facebook.com\r\nhttp://twitter.com\r\nhttp://pinterest.com"
+[/INFO]
+
+
+$url=get_random_line("$var_a")
+
+$referer=get_random_line("$var_b")
+referer("$referer")
+
+navigate("$url")
+
+//You can change all the sleep values
+sleep({3|6|9|12})
+
+A("class","helpful-yes trigger-modal","Click")
+
